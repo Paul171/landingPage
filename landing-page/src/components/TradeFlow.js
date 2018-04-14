@@ -1,5 +1,4 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Typography from 'material-ui/Typography';
 import Buy1 from '../public/Buy_1.png';

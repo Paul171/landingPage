@@ -53,7 +53,6 @@ class Header extends Component {
   render() {
     const { classes } = this.props;
     const { lang, isOpen, anchorEl } = this.state;
-    const open = Boolean(anchorEl);
   
     console.log("classses", classes);
     return (
