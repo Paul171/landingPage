@@ -1,0 +1,103 @@
+@mixin tag-line() {  
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+}
+
+@mixin section-style($padding) {
+  position: relative;
+  background: url('./public/background-image.jpg') 0px $padding;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fill-available;
+}
+.header-color {
+  flex-grow: 1;
+  background-color: white;
+  h2 {
+    color: blue;
+    flex: 1;
+  }
+  button {
+    span {    
+    color: gray;
+    }
+    svg {
+      color: blue;
+    }
+  }
+
+}
+.mobile-img {
+  position: fixed;
+  top: 15%;
+  right: 0px;
+  z-index: 1;
+  width: 300px;
+}
+.landing {
+  @include section-style(20px);  
+  .tag-line {    
+    @include tag-line();
+    width: fit-content;    
+    z-index: 1;
+    position: relative;
+    
+  }
+  Button {    
+    flex: initial;
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+    span {
+      color: white;
+    }
+  }
+}
+
+.security {
+  @include section-style(0);
+  .header {
+    @include tag-line();
+    position: relative;
+
+  }
+  
+}
+
+.trade-flow {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  .grid-list {
+      width: 500;
+      height: 450;
+      // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+      transform: 'translateZ(0)';
+  }
+}
+
+footer {
+  flex-grow: 1;
+  position: relative;
+  background-color: gainsboro;
+  .sub-content {
+    background-color: grey;
+  }
+}
+
+.support {
+  flex-grow: 1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  div {
+    text-align: center;
+  }
+}
+
+.call-for-action {
+  flex-grow: 1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}

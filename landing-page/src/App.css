@@ -1,0 +1,78 @@
+.header-color {
+  flex-grow: 1;
+  background-color: white; }
+  .header-color h2 {
+    color: blue;
+    flex: 1; }
+  .header-color button span {
+    color: gray; }
+  .header-color button svg {
+    color: blue; }
+
+.mobile-img {
+  position: fixed;
+  top: 15%;
+  right: 0px;
+  z-index: 1;
+  width: 300px; }
+
+.landing {
+  position: relative;
+  background: url("./public/background-image.jpg") 0px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fill-available; }
+  .landing .tag-line {
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    width: fit-content;
+    z-index: 1;
+    position: relative; }
+  .landing Button {
+    flex: initial;
+    position: absolute;
+    left: 40%;
+    bottom: 20%; }
+    .landing Button span {
+      color: white; }
+
+.security {
+  position: relative;
+  background: url("./public/background-image.jpg") 0px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fill-available; }
+  .security .header {
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    position: relative; }
+
+.trade-flow {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+  .trade-flow .grid-list {
+    width: 500;
+    height: 450;
+    transform: 'translateZ(0)'; }
+
+footer {
+  flex-grow: 1;
+  position: relative;
+  background-color: gainsboro; }
+  footer .sub-content {
+    background-color: grey; }
+
+.support {
+  flex-grow: 1;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+  .support div {
+    text-align: center; }
+
+.call-for-action {
+  flex-grow: 1;
+  padding-bottom: 20px;
+  padding-top: 20px; }
